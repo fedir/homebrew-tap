@@ -5,21 +5,21 @@
 class JsonEncode < Formula
   desc "Turn any shell output into JSON, one pipe away."
   homepage "https://github.com/fedir/json_encode"
-  version "2.0.0"
+  version "3.0.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fedir/json_encode/releases/download/v2.0.0/json_encode_2.0.0_darwin_amd64.tar.gz"
-      sha256 "9d5f0a86018a2c0596dcbb12ba7c8710c4c6d16a70161c4e512307ca4f7cc307"
+      url "https://github.com/fedir/json_encode/releases/download/v3.0.0/json_encode_3.0.0_darwin_amd64.tar.gz"
+      sha256 "d122c6787117f1ff963849f198ecf20ca67c443c9da1265458085f0e9daf8cd0"
 
       define_method(:install) do
         bin.install "json_encode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fedir/json_encode/releases/download/v2.0.0/json_encode_2.0.0_darwin_arm64.tar.gz"
-      sha256 "bcb5dcc7d71f9c9282073ac408f966f05b9e1828017608c10ac66d390b52661e"
+      url "https://github.com/fedir/json_encode/releases/download/v3.0.0/json_encode_3.0.0_darwin_arm64.tar.gz"
+      sha256 "036459e25fad9ef7b292838c7defb3b9e5d24a54d81c014c69bd974e3211c5ba"
 
       define_method(:install) do
         bin.install "json_encode"
@@ -29,15 +29,15 @@ class JsonEncode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fedir/json_encode/releases/download/v2.0.0/json_encode_2.0.0_linux_amd64.tar.gz"
-      sha256 "e55fa1657b8a2e2639e1563363abf79536e58c909bc4b77efd971d64e3cfeb50"
+      url "https://github.com/fedir/json_encode/releases/download/v3.0.0/json_encode_3.0.0_linux_amd64.tar.gz"
+      sha256 "156b13c4a09b7be39c07996815905642e0a2fdb350786cffc533082f5f5ba6ed"
       define_method(:install) do
         bin.install "json_encode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fedir/json_encode/releases/download/v2.0.0/json_encode_2.0.0_linux_arm64.tar.gz"
-      sha256 "19d4ebab6cdc014dee88b9d26db61800f4eeea7e2774980d17b8f9670ff4bdac"
+      url "https://github.com/fedir/json_encode/releases/download/v3.0.0/json_encode_3.0.0_linux_arm64.tar.gz"
+      sha256 "22cf1aefdf7fed7f3b033dad87b349a96338631c06555f85377856ba22359bf0"
       define_method(:install) do
         bin.install "json_encode"
       end

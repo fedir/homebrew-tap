@@ -5,21 +5,21 @@
 class Yrank < Formula
   desc "Rank YouTube playlist, channel or search-result videos by engagement metrics."
   homepage "https://github.com/fedir/yrank"
-  version "0.4.0"
+  version "0.5.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fedir/yrank/releases/download/v0.4.0/yrank_0.4.0_darwin_amd64.tar.gz"
-      sha256 "d1e9380c4e9bd7b77a38179c396c0794f90dfaea4de54d271dba89d15edb674e"
+      url "https://github.com/fedir/yrank/releases/download/v0.5.0/yrank_0.5.0_darwin_amd64.tar.gz"
+      sha256 "e2b0c84598b72e7b3c428f1bd15bfad519d8e2308cdfdc1d3930a1db12c372c4"
 
       define_method(:install) do
         bin.install "yrank"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fedir/yrank/releases/download/v0.4.0/yrank_0.4.0_darwin_arm64.tar.gz"
-      sha256 "5e72d549a2f97881c48372c5fc9b32cf68b5292f096f5661443b85a244934a02"
+      url "https://github.com/fedir/yrank/releases/download/v0.5.0/yrank_0.5.0_darwin_arm64.tar.gz"
+      sha256 "bf2640a9ad2659179360063a96b39a7b46ef16b04af1ca6f3033f000e85530aa"
 
       define_method(:install) do
         bin.install "yrank"
@@ -29,15 +29,15 @@ class Yrank < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fedir/yrank/releases/download/v0.4.0/yrank_0.4.0_linux_amd64.tar.gz"
-      sha256 "64135779fed0b2211f5adb93b8ec2738144454bd8841ec08071cba06806446f9"
+      url "https://github.com/fedir/yrank/releases/download/v0.5.0/yrank_0.5.0_linux_amd64.tar.gz"
+      sha256 "75d117b7a7dd628f278d1b3848304b2e1406fe1fdb865c8907489eba6b9b0c83"
       define_method(:install) do
         bin.install "yrank"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fedir/yrank/releases/download/v0.4.0/yrank_0.4.0_linux_arm64.tar.gz"
-      sha256 "eb31b44cd0290aeadae1861458061d19f571c52ec404907c36cc142d3a6313ed"
+      url "https://github.com/fedir/yrank/releases/download/v0.5.0/yrank_0.5.0_linux_arm64.tar.gz"
+      sha256 "0c71d0c44492714ddd2fe57faf59cfd606e7ea9cbc13825168709046bbbfbdc7"
       define_method(:install) do
         bin.install "yrank"
       end
